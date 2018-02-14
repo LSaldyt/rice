@@ -11,3 +11,5 @@ alias gp='git push'
 alias gsp='git add . && git commit && git push'
 
 alias logism="java -jar logism-evolution.jar"
+
+alias reload='source ~/.bashrc && i3-msg reload'

@@ -1,0 +1,30 @@
+[general]
+base_currency = USD
+display = percentage
+#display = price
+
+[bitcoin]
+icon = BTC
+
+[litecoin]
+icon = LTC
+
+[ripple]
+icon = XRP
+
+[ethereum]
+icon = ETH
+
+[stellar]
+icon = XLM
+
+[neo]
+icon = NEO
+
+[monero]
+icon = XMR
+
+[tron]
+icon = TRX
+
+
