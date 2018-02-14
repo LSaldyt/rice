@@ -9,3 +9,5 @@ cp ~/.config/polybar . -a
 cp ~/.Xmodmap .
 cp ~/.xinitrc .
 cp ~/.Xresources .
+cp ~/.bashrc .
+cp ~/.bash_profile .
