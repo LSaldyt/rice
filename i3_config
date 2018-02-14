@@ -208,7 +208,7 @@ bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
 exec --no-startup-id conky -c ~/.config/conky.conf
 
 # alternate change focus
-bindsym Ctrl+$left focus left
-bindsym Ctrl+$down focus down
-bindsym Ctrl+$up focus up
-bindsym Ctrl+$right focus right
+#bindsym Ctrl+$left focus left
+#bindsym Ctrl+$down focus down
+#bindsym Ctrl+$up focus up
+#bindsym Ctrl+$right focus right

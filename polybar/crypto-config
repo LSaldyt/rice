@@ -6,25 +6,25 @@ display = percentage
 [bitcoin]
 icon = BTC
 
-[litecoin]
-icon = LTC
-
+#[litecoin]
+#icon = LTC
+#
 [ripple]
 icon = XRP
 
 [ethereum]
 icon = ETH
 
-[stellar]
-icon = XLM
-
-[neo]
-icon = NEO
+#[stellar]
+#icon = XLM
+#
+#[neo]
+#icon = NEO
 
 [monero]
 icon = XMR
 
-[tron]
-icon = TRX
+#[tron]
+#icon = TRX
 
 
