@@ -1,0 +1,13 @@
+alias ls='ls --color=auto'
+alias update='pacman -Syu'
+
+alias see='yaourt -s'
+alias get='pacman -S'
+alias web='w3m google.com'
+
+alias pyget='pip3 install --user'
+alias gs='git add . && git commit'
+alias gp='git push'
+alias gsp='git add . && git commit && git push'
+
+alias logism="java -jar logism-evolution.jar"

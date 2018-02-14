@@ -11,3 +11,4 @@ cp ~/.xinitrc .
 cp ~/.Xresources .
 cp ~/.bashrc .
 cp ~/.bash_profile .
+cp ~/.aliases .
