@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Loads config files into this directory
+cp ~/.i3/config .
+cp ~/.vimrc .
+cp ~/.config/ranger . -a
+cp ~/.config/conky.conf . -a
+cp ~/.config/polybar . -a
