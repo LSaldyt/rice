@@ -34,14 +34,6 @@ set $right l
 # use Mouse+Mod1 to drag floating windows to their wanted position
 floating_modifier Mod1
 
-# start a terminal
-bindsym Mod1+Return exec tilix #i3-sensible-terminal
-
-# start dmenu (a program launcher)
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-
 # change focus
 bindsym Mod1+$left focus left
 bindsym Mod1+$down focus down
@@ -185,7 +177,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec i3-config-wizard
 
-exec_always feh --bg-scale ~/Pictures/planet.jpg
+exec_always feh --bg-scale ~/pictures/planet.jpg
 for_window [class="^.*"] border pixel 0
 
 exec compton -f

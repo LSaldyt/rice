@@ -1,15 +1,27 @@
-alias ls='ls --color=auto'
-alias update='pacman -Syu'
+#alias la='ls -Alh --group-directories-first --color=auto --'
+#alias ls='ls -l --group-directories-first --color=auto --'
+alias ls='ls --group-directories-first --color=auto --'
+alias upgrade="yaourt -Syau --noconfirm"
 
 alias see='yaourt -s'
-alias get='pacman -S'
+alias get='sudo pacman -S'
 alias web='w3m google.com'
 
 alias pyget='pip3 install --user'
-alias gs='git add . && git commit'
+
+alias reload='source ~/.bashrc && sil i3-msg reload'
+alias please='sudo $(history -p !!)'
+
 alias gp='git push'
-alias gsp='git add . && git commit && git push'
+alias ga='git add .'
+alias gs='git add -u && git commit'
+alias gsp='gs && git push'
+alias gu='git pull'
+alias gc='git checkout'
+alias gb='gc -b'
+alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
 
-alias logism="java -jar logism-evolution.jar"
 
-alias reload='source ~/.bashrc && i3-msg reload'
+function sil () {
+    "$@" &>/dev/null & disown &>/dev/null
+}

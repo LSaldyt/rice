@@ -27,7 +27,7 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
-modules-center = 
+modules-center = nova
 modules-right = cpu memory clock battery 
 
 tray-position = right
@@ -174,7 +174,7 @@ margin-bottom = 5
 [module/clock]
 type = internal/date
 interval = 2
-date = %%{F#999}%Y-%m-%d%%{F-}  %%{F#fff}%H:%M%%{F-}
+date = %%{F#999}%Y-%m-%d%%{F-}  %%{F#fff}%I:%M%%{F-}
 
 [module/memory]
 type = internal/memory
