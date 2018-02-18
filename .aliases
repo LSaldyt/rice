@@ -12,10 +12,11 @@ alias pyget='pip3 install --user'
 alias reload='source ~/.bashrc && sil i3-msg reload'
 alias please='sudo $(history -p !!)'
 
+alias gs='git status'
 alias gp='git push'
 alias ga='git add .'
 alias gc='git add -u && git commit'
-alias gp='gc && git push'
+alias gall='gs && gc && gp'
 alias gu='git pull'
 alias gco='git checkout'
 function gb () {
