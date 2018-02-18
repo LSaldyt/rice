@@ -14,14 +14,40 @@ alias please='sudo $(history -p !!)'
 
 alias gp='git push'
 alias ga='git add .'
-alias gs='git add -u && git commit'
-alias gsp='gs && git push'
+alias gc='git add -u && git commit'
+alias gp='gc && git push'
 alias gu='git pull'
-alias gc='git checkout'
-alias gb='gc -b'
+alias gco='git checkout'
+function gb () {
+    git checkout -b $1
+    git push -u origin $1
+}
 alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
 
+function md () {
+    mkdir $1 && cd $1
+}
 
 function sil () {
     "$@" &>/dev/null & disown &>/dev/null
 }
+
+gitmake () {
+  curl -u $1 https://api.github.com/user/repos -d "{\"name\": \"$2\", \"description\": \"$3\"}"
+  #git://github.com/LSaldyt/trader.git
+  mkdir $2
+  cd $2 
+  git init
+  git remote add origin "https://github.com/$1/$2"
+  wget https://github.com/LSaldyt/scour/blob/master/LICENSE
+  touch README.md
+  echo $2 >> README.md
+  git add README.md LICENSE
+  git commit -m "Initial Commit"
+  git push -u origin master
+  git checkout -b develop
+  git push -u origin develop
+}
+
+#Usage: gmake repoName "Description if any"
+alias gmake='gitmake LSaldyt'
