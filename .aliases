@@ -9,7 +9,7 @@ alias web='w3m google.com'
 
 alias pyget='pip3 install --user'
 
-alias reload='source ~/.bashrc && sil i3-msg reload'
+alias reload='source ~/.bashrc && source ~/.aliases && sil i3-msg reload'
 alias please='sudo $(history -p !!)'
 
 alias gs='git status'
@@ -52,3 +52,10 @@ gitmake () {
 
 #Usage: gmake repoName "Description if any"
 alias gmake='gitmake LSaldyt'
+
+mlab () {
+    cat $1 | matlab -nodisplay -nosplash -nodesktop
+    #matlab -nodisplay -nosplash -nodesktop -r "run($1);exit;"
+}
+
+alias '...'='../..'

@@ -22,13 +22,27 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+;font-0 = "Ubuntu Mono Regular:pixelsize=10;1"
+;font-1 = "Ubuntu Mono Regular:fontformat=truetype:size=8:antialias=false;0"
+;font-2 = "Ubuntu Mono Regular:pixelsize=10;1"
+;font-3 = "Ubuntu Mono Regular:pixelsize=10;1"
+;font-4 = "Ubuntu Mono Regular:pixelsize=10;1"
+;font-5 = "Ubuntu Mono Regular:pixelsize=10;1"
+;font-6 = "Ubuntu Mono Regular:pixelsize=10;1"
+font-0 = "UbuntuMono-regular:pixelsize=12;"
+font-1 = "UbuntuMono-regular:pixelsize=12;"
 font-2 = siji:pixelsize=10;1
+font-3 = "UbuntuMono-regular:pixelsize=12;"
+font-4 = "UbuntuMono-regular:pixelsize=12;"
+font-5 = "UbuntuMono-regular:pixelsize=12;"
+font-6 = "UbuntuMono-regular:pixelsize=12;"
 
-modules-left = i3
-modules-center = 
-modules-right =  cpu memory nova clock battery 
+;font-0 = fixed:pixelsize=10;1
+;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+
+modules-left = i3 volume
+modules-center = nova
+modules-right =  cpu memory clock battery 
 
 tray-position = right
 tray-padding = 2
@@ -117,29 +131,29 @@ label = %date% %time%
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
-
-format-muted-prefix = " "
-;format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
+;format-volume = <label-volume> <bar-volume>
+;label-volume = VOL
+;label-volume-foreground = ${root.foreground}
+;
+;format-muted-prefix = " "
+;;format-muted-foreground = ${colors.foreground-alt}
+;label-muted = sound muted
+;
+;bar-volume-width = 10
+;bar-volume-foreground-0 = #55aa55
+;bar-volume-foreground-1 = #55aa55
+;bar-volume-foreground-2 = #55aa55
+;bar-volume-foreground-3 = #55aa55
+;bar-volume-foreground-4 = #55aa55
+;bar-volume-foreground-5 = #f5a70a
+;bar-volume-foreground-6 = #ff5555
+;bar-volume-gradient = false
+;bar-volume-indicator = |
+;bar-volume-indicator-font = 2
+;bar-volume-fill = ─
+;bar-volume-fill-font = 2
+;bar-volume-empty = ─
+;bar-volume-empty-font = 2
 ;bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
