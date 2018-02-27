@@ -9,6 +9,7 @@ PS1='[\u@\h \W]\$ '
 EDITOR=/usr/bin/vim
 
 export PATH=$PATH:~/bin/
+export PATH=$PATH:~/projects/helper/
 
 #pywal
 setsid python -m pywal -i ~/Pictures/planet.jpg > /dev/null

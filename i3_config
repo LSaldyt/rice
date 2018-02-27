@@ -145,6 +145,7 @@ mode "resize" {
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
+        bindsym Mod1+r mode "default"
 }
 
 bindsym Mod1+r mode "resize"
@@ -204,4 +205,5 @@ exec --no-startup-id conky -c ~/.config/conky.conf
 #bindsym Ctrl+$left focus left
 #bindsym Ctrl+$down focus down
 #bindsym Ctrl+$up focus up
-#bindsym Ctrl+$right focus right
+bindsym Ctrl+space exec bash ~/bin/toggle-bar
+exec ~/bin/toggle-bar

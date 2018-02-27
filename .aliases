@@ -12,6 +12,8 @@ alias pyget='pip3 install --user'
 alias reload='source ~/.bashrc && source ~/.aliases && sil i3-msg reload'
 alias please='sudo $(history -p !!)'
 
+alias grep='grep --color=auto'
+
 alias gs='git status'
 alias gp='git push'
 alias ga='git add .'
@@ -19,7 +21,10 @@ alias gc='git add -u && git commit'
 alias gall='gs && gc && gp'
 alias gu='git pull'
 alias gco='git checkout'
-function gb () {
+alias gm='git merge --no-ff'
+alias gb='git branch'
+alias gl='git log'
+function gnew () {
     git checkout -b $1
     git push -u origin $1
 }
@@ -58,4 +63,11 @@ mlab () {
     #matlab -nodisplay -nosplash -nodesktop -r "run($1);exit;"
 }
 
-alias '...'='../..'
+alias pomo='helper timer 30'
+
+aurget (){
+    git clone $1
+    cd $1
+    makepkg -Acs
+    sudo pacman -U *.pkg.tar.xz
+}
