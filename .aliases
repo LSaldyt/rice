@@ -82,3 +82,4 @@ gget () {
     git clone "https://github.com/LSaldyt/$1"
 }
 alias aurget='pacaur -S'
+alias gpb='git push & > /dev/null'
