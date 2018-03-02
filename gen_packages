@@ -1,3 +1,4 @@
 #!/bin/bash
 
-pacman -Q > packages.txt
+pacman -Q > pacman_packages.txt
+yaourt -Q > yaourt_packages.txt

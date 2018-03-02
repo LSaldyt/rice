@@ -1,6 +1,6 @@
 #alias la='ls -Alh --group-directories-first --color=auto --'
 #alias ls='ls -l --group-directories-first --color=auto --'
-alias ls='ls --group-directories-first --color=auto --'
+alias ls='ls --group-directories-first --color=auto'
 alias upgrade="yaourt -Syau --noconfirm"
 
 alias see='yaourt -s'

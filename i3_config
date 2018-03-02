@@ -179,7 +179,9 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 exec i3-config-wizard
 
-exec_always feh --bg-scale ~/pictures/planet.jpg
+#exec_always feh --bg-scale ~/Downloads/escher.jpg
+exec_always feh --bg-scale ~/Downloads/tree.jpg
+#exec_always feh --bg-scale ~/pictures/planet.jpg
 #exec_always feh --bg-scale ~/pictures/net.jpg
 #exec_always feh --bg-scale ~/pictures/bulb.jpeg
 for_window [class="^.*"] border pixel 0
@@ -198,9 +200,9 @@ bindsym Ctrl+q kill
 
 # Launch default applications extremely quickly
 bindsym Ctrl+s exec firefox   
-bindsym Ctrl+a exec tilix
+#bindsym Ctrl+a exec tilix
 bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
-exec --no-startup-id conky -c ~/.config/conky.conf
+#exec --no-startup-id conky -c ~/.config/conky.conf
 
 bindsym Mod1+space exec bash ~/bin/toggle-bar
 exec ~/bin/toggle-bar
