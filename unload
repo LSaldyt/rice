@@ -2,7 +2,7 @@
 
 # unloads config files into system
 
-cp i3_config ~/.i3/config
+cp i3_config ~/.config/i3/config
 cp .vimrc ~/
 cp ranger ~/.config/ranger -a
 cp conky.conf ~/.config/conky.conf
