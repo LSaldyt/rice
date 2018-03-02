@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# unloads config files into system
+
+cp i3_config ~/.i3/config
+cp .vimrc ~/
+cp ranger ~/.config/ranger -a
+cp conky.conf ~/.config/conky.conf
+cp polybar ~/.config/polybar -a
+cp .Xmodmap ~
+cp .xinitrc ~
+cp .Xresources ~
+cp .bashrc ~
+cp .bash_profile ~
+cp .aliases ~
+cp toggle-bar ~/bin
