@@ -60,10 +60,10 @@ bindsym Mod1+Shift+Up move up
 bindsym Mod1+Shift+Right move right
 
 # split in horizontal orientation
-bindsym Ctrl+f split h
-
-# split in vertical orientation
-bindsym Ctrl+g split v
+#bindsym Mod1+h split h
+#
+## split in vertical orientation
+#bindsym Mod1+v split v
 
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
@@ -180,14 +180,15 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec i3-config-wizard
 
 exec_always feh --bg-scale ~/pictures/planet.jpg
+#exec_always feh --bg-scale ~/pictures/net.jpg
+#exec_always feh --bg-scale ~/pictures/bulb.jpeg
 for_window [class="^.*"] border pixel 0
 
 exec compton -f
 
 # i3 gaps
-#
-gaps inner 5
-gaps outer 5
+gaps inner 10
+gaps outer 10
 
 # Brightness
 bindsym Mod1+Ctrl+b exec brightness-controller
@@ -201,9 +202,5 @@ bindsym Ctrl+a exec tilix
 bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
 exec --no-startup-id conky -c ~/.config/conky.conf
 
-# alternate change focus
-#bindsym Ctrl+$left focus left
-#bindsym Ctrl+$down focus down
-#bindsym Ctrl+$up focus up
-bindsym Ctrl+space exec bash ~/bin/toggle-bar
+bindsym Mod1+space exec bash ~/bin/toggle-bar
 exec ~/bin/toggle-bar

@@ -38,12 +38,8 @@ function sil () {
     "$@" &>/dev/null & disown &>/dev/null
 }
 
-gitmake () {
+gitadd(){
   curl -u $1 https://api.github.com/user/repos -d "{\"name\": \"$2\", \"description\": \"$3\"}"
-  #git://github.com/LSaldyt/trader.git
-  mkdir $2
-  cd $2 
-  git init
   git remote add origin "https://github.com/$1/$2"
   wget https://github.com/LSaldyt/scour/blob/master/LICENSE
   touch README.md
@@ -55,8 +51,16 @@ gitmake () {
   git push -u origin develop
 }
 
+gitmake () {
+  mkdir $2
+  cd $2 
+  git init
+  gitadd $1 $2 $3
+}
+
 #Usage: gmake repoName "Description if any"
 alias gmake='gitmake LSaldyt'
+alias gadd='gitadd LSaldyt'
 
 mlab () {
     cat $1 | matlab -nodisplay -nosplash -nodesktop
@@ -65,9 +69,16 @@ mlab () {
 
 alias pomo='helper timer 30'
 
-aurget (){
-    git clone $1
-    cd $1
-    makepkg -Acs
-    sudo pacman -U *.pkg.tar.xz
+viewmd (){
+    pandoc "$1" | w3m -T text/html
 }
+
+alias q='exit'
+alias rg='ranger'
+alias rel='reload'
+alias re='reload'
+alias gcl='git clone'
+gget () {
+    git clone "https://github.com/LSaldyt/$1"
+}
+alias aurget='pacaur -S'

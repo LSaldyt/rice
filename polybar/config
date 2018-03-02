@@ -50,8 +50,8 @@ tray-padding = 2
 [module/nova]
 type=custom/script
 interval=.1
-exec = /home/flynn/projects/helper/helper todo
-click-left = /home/flynn/projects/helper/helper done
+exec = /home/flynn/projects/hacking/helper/helper todo
+click-left = /home/flynn/projects/hacking/helper/helper done
 #click-left = task "$((`cat /tmp/tw_polybar_id`))" done
 
 [module/crypto]
