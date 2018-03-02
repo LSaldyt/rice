@@ -13,4 +13,4 @@ cp .Xresources ~
 cp .bashrc ~
 cp .bash_profile ~
 cp .aliases ~
-cp toggle-bar ~/bin
+#cp toggle-bar ~/bin
