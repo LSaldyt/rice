@@ -2,15 +2,13 @@
 
 # unloads config files into system
 
-cp i3_config ~/.config/i3/config
+cp .config ~/ -a
 cp .vimrc ~/
-cp ranger ~/.config/ranger -a
-cp conky.conf ~/.config/conky.conf
-cp polybar ~/.config/polybar -a
 cp .Xmodmap ~
 cp .xinitrc ~
 cp .Xresources ~
 cp .bashrc ~
 cp .bash_profile ~
 cp .aliases ~
-#cp toggle-bar ~/bin
+mkdir ~/bin
+cp toggle-bar ~/bin

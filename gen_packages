@@ -2,3 +2,4 @@
 
 pacman -Q > pacman_packages.txt
 yaourt -Q > yaourt_packages.txt
+pip list > pip_packages.txt

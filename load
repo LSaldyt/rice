@@ -1,15 +1,11 @@
 #!/bin/bash
 
 # Loads config files into this directory
-cp ~/.config/i3/config i3_config
 cp ~/.vimrc .
-cp ~/.config/ranger . -a
-#cp ~/.config/conky.conf . -a
-cp ~/.config/polybar . -a
 cp ~/.Xmodmap .
 cp ~/.xinitrc .
 cp ~/.Xresources .
 cp ~/.bashrc .
 cp ~/.bash_profile .
 cp ~/.aliases .
-#cp ~/bin/toggle-bar .
+cp ~/.config . -a
