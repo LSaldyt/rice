@@ -1,3 +1,10 @@
-git clone https://github.com/willHol/polybar-crypto.git &&
-    cd polybar-crypto &&
-    cp ./{crypto-config,crypto.py} ~/.config/polybar
+#!/bin/bash
+sudo pacman -S nvidia nvidia-utils lib32-nvidia-utils 
+sudo pacman -S xorg-server xorg-xinit
+./unload
+./clojure
+./plug
+./git_setup
+./WICD
+
+sudo pacman -S vim termite
