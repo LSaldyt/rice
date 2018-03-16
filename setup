@@ -10,6 +10,7 @@ sudo pacman -S xorg-server xorg-xinit
 ./pywal
 ./WICD
 
+source ~/.bashrc
 get vim termite compton feh htop cmatrix
 yget bash-pipes
 
