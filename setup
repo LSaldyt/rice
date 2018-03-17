@@ -11,6 +11,7 @@ sudo pacman -S xorg-server xorg-xinit
 ./WICD
 
 source ~/.bashrc
+get i3 ranger dmenu
 get vim termite compton feh htop cmatrix
 yget bash-pipes
 
