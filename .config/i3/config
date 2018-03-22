@@ -188,6 +188,7 @@ bindsym Ctrl+q kill
 # Launch default applications extremely quickly
 bindsym Ctrl+s exec firefox   
 bindsym Ctrl+a exec termite
+bindsym Ctrl+asciitilde exec termite
 bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+space exec bash ~/bin/toggle-bar

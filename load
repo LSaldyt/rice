@@ -8,4 +8,8 @@ cp ~/.Xresources .
 cp ~/.bashrc .
 cp ~/.bash_profile .
 cp ~/.aliases .
-cp ~/.config . -a
+cp ~/.config/dconf .config -a
+cp ~/.config/fontconfig .config -a
+cp ~/.config/i3 .config -a
+cp ~/.config/spotify .config -a
+cp ~/.config/termite .config -a
