@@ -1,14 +1,19 @@
 #!/bin/bash
 
 # Loads config files into this directory
-cp ~/.vimrc .
-cp ~/.Xmodmap .
-cp ~/.xinitrc .
-cp ~/.Xresources .
-cp ~/.bashrc .
+cp ~/.vimrc        .
+cp ~/.Xmodmap      .
+cp ~/.xinitrc      .
+cp ~/.Xresources   .
+cp ~/.bashrc       .
 cp ~/.bash_profile .
-cp ~/.aliases .
-cp ~/.config/dconf .config -a
-cp ~/.config/i3 .config -a
+cp ~/.aliases      .
+
+cp ~/.config/dconf   .config -a
+cp ~/.config/i3      .config -a
 cp ~/.config/spotify .config -a
 cp ~/.config/termite .config -a
+cp ~/.config/vivaldi .config -a
+cp ~/.config/polybar .config -a
+cp ~/.config/htop    .config -a
+
