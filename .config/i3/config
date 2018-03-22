@@ -204,5 +204,4 @@ bindsym $mod+Shift+minus gaps outer all minus $resize_amount
 
 exec_always feh --bg-scale ~/pictures/wallpaper/current
 bindsym $win+space exec res
-bindsym $win+$mod+space exec save_i3
 
