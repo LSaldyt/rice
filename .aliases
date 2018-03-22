@@ -99,10 +99,20 @@ alias wd='work_dir'
 alias work='wd ~/projects'
 alias wk='work'
 alias sw='telnet towel.blinkenlights.nl'
-alias reset='source ~/.bashrc && source ~/.aliases && i3-msg restart && clear && cd'
+alias reset='clear && cd ~'
 alias res='reset'
 alias pls='please'
 alias s='sudo'
 alias up?='ping google.com'
 alias yget='yaourt -S'
 alias pm='pacman'
+
+save_i3 () {
+    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    ./load
+    ga
+    gc -m 'Updates config files'
+    gp
+    popd
+}
+alias ras='source ~/.aliases'
