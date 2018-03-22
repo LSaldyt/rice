@@ -107,7 +107,7 @@ alias up?='ping google.com'
 alias yget='yaourt -S'
 alias pm='pacman'
 
-save_i3 () {
+save_rice () {
     pushd ~/projects/hacking/rice || pushd ~/projects/rice
     ./load
     ga
@@ -115,4 +115,15 @@ save_i3 () {
     gp
     popd
 }
+
+get_rice () {
+    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    git pull
+    ./unload
+    popd
+}
+
 alias ras='source ~/.aliases'
+
+alias find='pacman -Ss'
+alias yfind='yaourt -Ss'
