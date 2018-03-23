@@ -16,4 +16,5 @@ cp ~/.config/termite .config -a
 cp ~/.config/vivaldi .config -a
 cp ~/.config/polybar .config -a
 cp ~/.config/htop    .config -a
+cp ~/.config/ranger  .config -a
 

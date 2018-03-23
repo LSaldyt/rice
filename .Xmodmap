@@ -247,10 +247,24 @@ keycode 253 =
 keycode 254 =
 keycode 255 =
 
-remove Lock = Caps_Lock
-remove Control = Control_L
-keysym Control_L = Control_L
-keysym Caps_Lock = Control_L
-add Lock = Caps_Lock
-add Control = Control_L
+clear    lock 
+clear control
+clear    mod1
+clear    mod2
+clear    mod3
+clear    mod4
+clear    mod5
+! Control to HYPER
+keycode 37 = Hyper_L
+! Caps to Hyper
+keycode 66 = Control_L
+! Overwrite print with Hyper_R
+! keycode 107 = Hyper_R
+add control = Control_L
+add    mod1 = Alt_L 
+add    mod2 = Control_R
+add    mod3 = Hyper_L
+add    mod4 = Super_L
+add    mod5 = Alt_R
+!add mod5 = Mode_switch ISO_Level3_Shift
 

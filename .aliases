@@ -9,7 +9,7 @@ alias web='w3m google.com'
 
 alias pyget='pip3 install --user'
 
-alias reload='source ~/.bashrc && source ~/.aliases && i3-msg restart'
+alias reload='source ~/.bashrc && source ~/.aliases && i3-msg restart && xmodmap ~/.Xmodmap'
 alias please='sudo $(history -p !!)'
 
 alias grep='grep --color=auto'
@@ -105,9 +105,10 @@ alias pls='please'
 alias s='sudo'
 alias up?='ping google.com'
 alias yget='yaourt -S'
+alias aurget='yget'
 alias pm='pacman'
 
-save_rice () {
+save_i3 () {
     pushd ~/projects/hacking/rice || pushd ~/projects/rice
     ./load
     ga
@@ -115,15 +116,7 @@ save_rice () {
     gp
     popd
 }
-
-get_rice () {
-    pushd ~/projects/hacking/rice || pushd ~/projects/rice
-    git pull
-    ./unload
-    popd
-}
-
 alias ras='source ~/.aliases'
-
-alias find='pacman -Ss'
-alias yfind='yaourt -Ss'
+alias update='pacman -Syu'
+alias xm='vim ~/.Xmodmap'
+alias rxm='xmodmap ~/.Xmodmap'

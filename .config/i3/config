@@ -28,16 +28,15 @@ font pango:UbuntuMono-regular 12
 # use these keys for focus, movement, and resize directions when reaching for
 #
 # the arrows is not convenient
-set $mod Mod1
-set $win Mod4
+set $mod   Mod1
+set $hyper Mod3
+set $win   Mod4
+set $meta  Mod5
 
 set $left h
 set $down j
 set $up k
 set $right l
-
-# use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
 
 # change focus
 bindsym $mod+$left focus left
@@ -62,39 +61,6 @@ bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-
-# split in horizontal orientation
-bindsym $mod+b split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
-
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# toggle tiling / floating
-bindsym $mod+Shift+Ctrl+space floating toggle
-
-# change focus between tiling / floating windows
-bindsym $mod+c focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-bindsym $mod+d focus child
-
-# move the currently focused window to the scratchpad
-#bindsym $mod+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-#bindsym $mod+minus scratchpad show
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -176,20 +142,11 @@ for_window [class="^.*"] border pixel 0
 exec_always compton -f
 
 # i3 gaps
-gaps inner 40
+gaps inner 20
 gaps outer 0
 
 # Brightness
-bindsym $mod+Ctrl+b exec brightness-controller
-
-# kill focused window
-bindsym Ctrl+q kill
-
-# Launch default applications extremely quickly
-bindsym Ctrl+s exec firefox   
-bindsym Ctrl+a exec termite
-bindsym Ctrl+asciitilde exec termite
-bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
+#bindsym $mod+Ctrl+b exec brightness-controller
 
 bindsym $mod+space exec bash ~/bin/toggle-bar
 exec ~/bin/toggle-bar
@@ -203,5 +160,77 @@ bindsym $mod+Shift+minus gaps outer all minus $resize_amount
 
 
 exec_always feh --bg-scale ~/pictures/wallpaper/current
-bindsym $win+space exec res
+#bindsym $win+space exec res
+
+#bindsym $hype+a exec termite
+#bindsym $meta+a exec termite
+#bindsym $win+a exec termite
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+#bindsym $mod+Shift+Ctrl+space floating toggle
+
+# change focus between tiling / floating windows
+#bindsym $mod+c focus mode_toggle
+
+# focus the parent container
+#bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# move the currently focused window to the scratchpad
+#bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+#bindsym $mod+minus scratchpad show
+# kill focused window
+bindsym Ctrl+q kill
+# launch
+bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
+
+# Launch default applications extremely quickly
+bindsym Ctrl+s exec firefox   
+bindsym Ctrl+a exec termite
+
+bindsym Ctrl+j workspace 1
+bindsym Ctrl+k workspace 2
+
+# Left hand
+
+# CTRL unbound keys
+# d
+# b
+# n
+# m
+# g
+# ;
+# y
+# u
+# i
+# o
+# p
+
+# ALT unbound:
+# Everything except hjkl basically
+
+# HYPER unbound:
+# Everything
+
+# SUPER unbound
+# Everything
+
 
