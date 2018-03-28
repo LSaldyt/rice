@@ -16,4 +16,10 @@ yaourt -S bash-pipes
 
 sudo pacman -S xf86-video-nouveau mesa lib32-mesa
 sudo pacman -S firefox w3m
+sudo yaourt -S polybar
+cd ~/projects
+mkdir hacking
+git clone https://github.com/LSaldyt/helper
+pip install --user httplib2
+pip install --user google-api-python-client
 

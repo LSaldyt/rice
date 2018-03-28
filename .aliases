@@ -117,6 +117,10 @@ save_i3 () {
     popd
 }
 alias ras='source ~/.aliases'
-alias update='pacman -Syu'
+alias update='sudo pacman -Syu'
 alias xm='vim ~/.Xmodmap'
 alias rxm='xmodmap ~/.Xmodmap'
+alias tm='vim ~/.config/termite/config'
+alias find='pacman -Ss'
+alias yfind='yaourt -SS'
+alias open='xdg-open'
