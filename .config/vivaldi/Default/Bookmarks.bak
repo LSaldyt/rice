@@ -57,7 +57,8 @@
                "id": "12",
                "meta_info": {
                   "Description": "shopping, electronics",
-                  "Thumbnail": "/resources/sd_amazon.png"
+                  "Thumbnail": "/resources/sd_amazon.png",
+                  "last_visited_desktop": "13166239248271543"
                },
                "name": "Amazon",
                "type": "url",
@@ -332,6 +333,9 @@
             }, {
                "date_added": "13166208314398957",
                "id": "42",
+               "meta_info": {
+                  "last_visited_desktop": "13166239273289050"
+               },
                "name": "GitHub · Build software better, together.",
                "type": "url",
                "url": "https://github.com/"

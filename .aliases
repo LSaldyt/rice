@@ -116,7 +116,13 @@ save_i3 () {
     gp
     popd
 }
+
+
+
 alias ras='source ~/.aliases'
 alias update='pacman -Syu'
 alias xm='vim ~/.Xmodmap'
 alias rxm='xmodmap ~/.Xmodmap'
+alias br='vim ~/.config/polybar/config'
+alias tm='vim ~/.config/termite/config'
+alias open='xdg-open'
