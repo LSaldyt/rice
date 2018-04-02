@@ -234,3 +234,10 @@ bindsym Ctrl+k workspace 2
 # Everything
 
 
+#ctrl + Print
+    #screencast.sh
+
+
+#ctrl + shift + Print
+    #killall ffmpeg
+    #
