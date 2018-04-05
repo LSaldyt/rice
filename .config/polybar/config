@@ -38,7 +38,7 @@ font-5 = "UbuntuMono-regular:pixelsize=12;"
 font-6 = "UbuntuMono-regular:pixelsize=12;"
 
 modules-left = i3 volume clock 
-modules-center = nova
+;modules-center = nova
 modules-right = cpu memory battery 
 
 tray-position = right

@@ -1,7 +1,9 @@
 # Rice
 
-How to make a cheap thinkpad look like something from a sci-fi movie  
-(And, more importantly, improve workflow.)  
+How to make a cheap thinkpad look like something from a sci-fi movie:
+(And, more importantly, improve workflow. Hackspeed reaches rates of 350wpm and upwards...)  
+
+![Flower](https://i.imgur.com/BrFKrhg.jpg)
 
 This is a work in progress
 
