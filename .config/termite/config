@@ -49,11 +49,7 @@ scrollback_lines = 10000
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-<<<<<<< HEAD
-background = rgba(0, 0, 0, .4)
-=======
 background = rgba(0, 0, 0, .8)
->>>>>>> e41528d92f5b2d68701d8ff9a5323132035b7ec5
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f
@@ -82,8 +78,9 @@ highlight = #2f2f2f
 #background = #3f3f3f
 #active_foreground = #e68080
 #active_background = #3f3f3f
+#padding = 2
 #border = #3f3f3f
-border_width = 0.5
+#border_width = 0.5
 #roundness = 2.0
 
 # vim: ft=dosini cms=#%s

@@ -117,21 +117,19 @@ save_i3 () {
     popd
 }
 
-
+get_i3 () {
+    save_i3
+    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    gpu
+    ./load
+    popd
+}
 
 alias ras='source ~/.aliases'
 alias update='sudo pacman -Syu'
 alias xm='vim ~/.Xmodmap'
 alias rxm='xmodmap ~/.Xmodmap'
-<<<<<<< HEAD
-alias br='vim ~/.config/polybar/config'
-alias tm='vim ~/.config/termite/config'
-alias open='xdg-open'
-alias lr='lein run'
-alias vrc='vim ~/.vimrc'
-=======
 alias tm='vim ~/.config/termite/config'
 alias find='pacman -Ss'
 alias yfind='yaourt -SS'
 alias open='xdg-open'
->>>>>>> e41528d92f5b2d68701d8ff9a5323132035b7ec5

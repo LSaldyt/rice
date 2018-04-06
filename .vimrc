@@ -403,7 +403,5 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
 
 Plug 'lervag/vimtex'
-Plug 'kovisoft/paredit'
-Plug 'amdt/vim-niji'
 
 call plug#end()
