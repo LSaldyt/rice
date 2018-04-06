@@ -234,10 +234,3 @@ bindsym Ctrl+asciitilde exec termite
 # Everything
 
 
-#ctrl + Print
-    #screencast.sh
-
-
-#ctrl + shift + Print
-    #killall ffmpeg
-    #
