@@ -115,6 +115,7 @@ save_i3 () {
     gc -m 'Updates config files'
     gp
     popd
+    rel
 }
 
 get_i3 () {
@@ -123,6 +124,7 @@ get_i3 () {
     gpu
     ./load
     popd
+    rel
 }
 
 alias ras='source ~/.aliases'
@@ -133,3 +135,4 @@ alias tm='vim ~/.config/termite/config'
 alias find='pacman -Ss'
 alias yfind='yaourt -SS'
 alias open='xdg-open'
+alias lr='lein run'
