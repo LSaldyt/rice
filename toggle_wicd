@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo systemctl stop wicd.service
+sleep 3
+sudo systemctl start wicd.service
