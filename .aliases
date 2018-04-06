@@ -110,6 +110,7 @@ alias pm='pacman'
 
 save_i3 () {
     pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    gpu
     ./load
     ga
     gc -m 'Updates config files'
