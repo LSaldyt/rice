@@ -1,2 +1,2 @@
-.config/vivaldi
-.config/dconf
+.config/vivaldi/*
+.config/dconf/*

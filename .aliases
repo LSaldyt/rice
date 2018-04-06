@@ -110,7 +110,6 @@ alias pm='pacman'
 
 save_i3 () {
     pushd ~/projects/hacking/rice || pushd ~/projects/rice
-    gpu
     ./load
     ga
     gc -m 'Updates config files'
@@ -121,7 +120,7 @@ save_i3 () {
 
 
 alias ras='source ~/.aliases'
-alias update='pacman -Syu'
+alias update='sudo pacman -Syu'
 alias xm='vim ~/.Xmodmap'
 alias rxm='xmodmap ~/.Xmodmap'
 alias br='vim ~/.config/polybar/config'
@@ -129,3 +128,6 @@ alias tm='vim ~/.config/termite/config'
 alias open='xdg-open'
 alias lr='lein run'
 alias vrc='vim ~/.vimrc'
+alias find='pacman -Ss'
+alias yfind='yaourt -SS'
+alias open='xdg-open'
