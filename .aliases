@@ -117,7 +117,13 @@ save_i3 () {
     popd
 }
 
-
+get_i3 () {
+    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    ./load
+    gpu
+    ./unload
+    popd
+}
 
 alias ras='source ~/.aliases'
 alias update='sudo pacman -Syu'
