@@ -1,0 +1,1 @@
+*/5 * * * * tar -zcvf backup-2018-04-10.tar.gz /home/flynn/files-or-folders-to-back-up/;/home/flynn/Dropbox-Uploader/dropbox_uploader.sh upload /home/flynn/files-or-folders-to-back-up/backup-2018-04-10.tar.gz Linux-Backup
