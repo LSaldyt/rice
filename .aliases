@@ -108,8 +108,12 @@ alias yget='yaourt -S'
 alias aurget='yget'
 alias pm='pacman'
 
-save_i3 () {
+to_i3_dir () {
     pushd ~/projects/hacking/rice || pushd ~/projects/rice
+}
+
+save_i3 () {
+    to_i3_dir
     ./load
     ga
     gc -m 'Updates config files'
@@ -118,7 +122,7 @@ save_i3 () {
 }
 
 get_i3 () {
-    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    to_i3_dir
     ./load
     gpu
     ./unload
@@ -142,4 +146,10 @@ backup () {
     tar -zcvf backup-$(date +%Y-%m-%d).tar.gz "$1"
     /home/flynn/Dropbox-Uploader/dropbox_uploader.sh upload backup-$(date +%Y-%m-%d).tar.gz "$2"
     rm backup-$(date +%Y-%m-%d).tar.gz
+}
+
+fix () {
+    to_i3_dir
+    ./toggle_wicd
+    popd
 }
