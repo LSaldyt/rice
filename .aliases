@@ -153,3 +153,12 @@ fix () {
     ./toggle_wicd
     popd
 }
+
+alias up='cd ..'
+alias upp='cd ../..'
+
+upn () {
+    for ((i=1; i<=$1; i++)); do
+        cd ..
+    done
+}
