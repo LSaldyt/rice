@@ -142,8 +142,8 @@ for_window [class="^.*"] border pixel 0
 exec_always compton -f
 
 # i3 gaps
-gaps inner 10
-gaps outer 10
+gaps inner 20
+gaps outer 0
 
 # Brightness
 #bindsym $mod+Ctrl+b exec brightness-controller
@@ -204,10 +204,10 @@ bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
 
 # Launch default applications extremely quickly
 bindsym Ctrl+s exec firefox   
-bindsym Ctrl+asciitilde exec termite
+bindsym Ctrl+a exec termite
 
-#bindsym Ctrl+j workspace 1
-#bindsym Ctrl+k workspace 2
+bindsym Ctrl+j workspace 1
+bindsym Ctrl+k workspace 2
 
 # Left hand
 
@@ -241,3 +241,16 @@ bindsym Ctrl+asciitilde exec termite
 #ctrl + shift + Print
     #killall ffmpeg
     #
+    #
+# Pulse Audio controls
+# bindsym F1 exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+# bindsym F2 exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+# bindsym F3 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
+bindsym $hyper+plus exec amixer -q set Master 2dB+ unmute
+bindsym $hyper+minus exec amixer -q set Master 2dB- unmute
+bindsym $hyper+m exec amixer -q set Master toggle
