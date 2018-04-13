@@ -96,7 +96,7 @@ work_dir () {
 }
 alias wd='work_dir'
 
-alias work='res && wd ~/projects'
+alias work='wd ~/projects'
 alias wk='work'
 alias sw='telnet towel.blinkenlights.nl'
 alias reset='clear && cd ~'
