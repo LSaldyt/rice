@@ -96,7 +96,7 @@ work_dir () {
 }
 alias wd='work_dir'
 
-alias work='wd ~/projects'
+alias work='res && wd ~/projects'
 alias wk='work'
 alias sw='telnet towel.blinkenlights.nl'
 alias reset='clear && cd ~'
@@ -107,6 +107,10 @@ alias up?='ping google.com'
 alias yget='yaourt -S'
 alias aurget='yget'
 alias pm='pacman'
+
+to_i3_dir () {
+    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+}
 
 save_i3 () {
     to_i3_dir
@@ -119,19 +123,22 @@ save_i3 () {
 }
 
 get_i3 () {
-    save_i3
     to_i3_dir
-    gpu
     ./load
+    gpu
+    ./unload
     popd
-    rel
 }
 
 alias ras='source ~/.aliases'
 alias update='sudo pacman -Syu'
 alias xm='vim ~/.Xmodmap'
 alias rxm='xmodmap ~/.Xmodmap'
+alias br='vim ~/.config/polybar/config'
 alias tm='vim ~/.config/termite/config'
+alias open='xdg-open'
+alias lr='lein run'
+alias vrc='vim ~/.vimrc'
 alias find='pacman -Ss'
 alias yfind='yaourt -SS'
 alias open='xdg-open'
@@ -156,4 +163,3 @@ upn () {
         cd ..
     done
 }
-alias lr='lein run'
