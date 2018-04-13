@@ -142,8 +142,8 @@ for_window [class="^.*"] border pixel 0
 exec_always compton -f
 
 # i3 gaps
-gaps inner 20
-gaps outer 0
+gaps inner 10
+gaps outer 10
 
 # Brightness
 #bindsym $mod+Ctrl+b exec brightness-controller
@@ -204,10 +204,10 @@ bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
 
 # Launch default applications extremely quickly
 bindsym Ctrl+s exec firefox   
-bindsym Ctrl+a exec termite
+bindsym Ctrl+asciitilde exec termite
 
-bindsym Ctrl+j workspace 1
-bindsym Ctrl+k workspace 2
+#bindsym Ctrl+j workspace 1
+#bindsym Ctrl+k workspace 2
 
 # Left hand
 

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#crontab -e
+crontab -l > .temp_tab
+#echo "*/1 * * * * tar -zcvf backup-$(date +%Y-%m-%d).tar.gz /home/flynn/backup-tree/;/home/flynn/Dropbox-Uploader/dropbox_uploader.sh upload backup-$(date +%Y-%m-%d).tar.gz Linux-Backup; rm backup-$(date +%Y-%m-%d).tar.gz" > .temp_tab
+echo "*/1 * * * * backup /home/flynn/backup-tree Linux-Backup" > .temp_tab
+crontab .temp_tab
+echo "Reset cron tab!"
