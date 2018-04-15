@@ -114,8 +114,8 @@ to_i3_dir () {
 
 save_i3 () {
     to_i3_dir
-    gpu
     ./load
+    gpu
     ga
     gc -m 'Updates config files'
     gp

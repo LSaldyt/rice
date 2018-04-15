@@ -27,4 +27,6 @@ pip install --user google-api-python-client
 
 sudo pacman -S steam steam-native-runtime
 
+sudo yaourt -S vim-supertab
+
 ./setup_projects
