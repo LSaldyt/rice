@@ -406,4 +406,9 @@ Plug 'lervag/vimtex'
 " Plug 'kovisoft/paredit'
 Plug 'amdt/vim-niji', { 'for': 'clojure' }
 
+Plug 'ervandew/supertab'
+
+" ervandew/supertab
+
+
 call plug#end()

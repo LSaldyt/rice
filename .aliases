@@ -109,7 +109,7 @@ alias aurget='yget'
 alias pm='pacman'
 
 to_i3_dir () {
-    pushd ~/projects/hacking/rice || pushd ~/projects/rice
+    pushd ~/projects/hacking/rice || pushd ~/projects/rice || pushd ~/projects/meta/rice
 }
 
 save_i3 () {
@@ -140,7 +140,7 @@ alias open='xdg-open'
 alias lr='lein run'
 alias vrc='vim ~/.vimrc'
 alias find='pacman -Ss'
-alias yfind='yaourt -SS'
+alias yfind='yaourt -Ss'
 alias open='xdg-open'
 
 backup () {
@@ -163,3 +163,5 @@ upn () {
         cd ..
     done
 }
+alias bar='vim ~/.config/polybar/config'
+alias lt='lein test'

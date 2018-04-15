@@ -1,13 +1,14 @@
 autologin.canonical_username="1262402960"
+autologin.blob="jYlgBEQxXD4WIcUXCVTjg5jIZhDeIcPRkLHjcRa/MbzwLKeTEBUd2JbSZGrha0oXbxd5mb5uvboT4/A/2tKGPrp8y97MS6at+cURGxPgxebXQZggq8IUctOBbKoEWoCEOtCbzQ+4eq2aKBlWghnWDmN2d0tutlLTZFQ121+jtE0="
 autologin.username="1262402960"
-autologin.saved_credentials="{\"1262402960\":[\"1262402960\",\"jYlgBEQxXD4WIcUXCVTjg4qzmvWfVjxHv/MFIqPdiKxL+5xRpHYt6U0vRERcSJmaN2zCiM5nn5sWany8MvXTHiYQEdtyv6eIvfcb+wH4r+tBoziZ4RaQXxIbK35BOJ+Dj/NHIvV+CvmGcxQ8IhTS8hOSUpNvZQTIGbziNk4uvgo=\"]}"
+autologin.saved_credentials="{\"1262402960\":[\"1262402960\",\"jYlgBEQxXD4WIcUXCVTjg5jIZhDeIcPRkLHjcRa/MbzwLKeTEBUd2JbSZGrha0oXbxd5mb5uvboT4/A/2tKGPrp8y97MS6at+cURGxPgxebXQZggq8IUctOBbKoEWoCEOtCbzQ+4eq2aKBlWghnWDmN2d0tutlLTZFQ121+jtE0=\"]}"
+core.clock_delta=0
 storage.last-location="/home/flynn/.cache/spotify/Storage"
 app.window.position.height=2080
 app.autostart-configured=true
 app.window.position.saved=true
 app.window.position.y=40
+app.last-launched-version="1.0.77.338.g758ebd78"
 app.autostart-mode=""
 app.window.position.x=40
 app.window.position.width=3760
-core.clock_delta=0
-autologin.blob="jYlgBEQxXD4WIcUXCVTjg4qzmvWfVjxHv/MFIqPdiKxL+5xRpHYt6U0vRERcSJmaN2zCiM5nn5sWany8MvXTHiYQEdtyv6eIvfcb+wH4r+tBoziZ4RaQXxIbK35BOJ+Dj/NHIvV+CvmGcxQ8IhTS8hOSUpNvZQTIGbziNk4uvgo="
