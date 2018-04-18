@@ -30,3 +30,5 @@ sudo pacman -S steam steam-native-runtime
 sudo yaourt -S vim-supertab
 
 ./setup_projects
+
+mkdir ~/.i3_logs
