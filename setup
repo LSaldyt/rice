@@ -5,11 +5,11 @@
 
 sudo pacman -S xorg-server xorg-xinit
 ./unload
-./setup_clojure
-./setup_vim_plugins
-./setup_git
-./setup_pywal
-./setup_WICD
+./setup_scripts/setup_clojure
+./setup_scripts/setup_vim_plugins
+./setup_scripts/setup_git
+./setup_scripts/setup_pywal
+./setup_scripts/setup_WICD
 
 source ~/.bashrc
 sudo pacman -S i3 ranger dmenu vim termite compton feh htop cmatrix
@@ -30,3 +30,5 @@ sudo pacman -S steam steam-native-runtime
 sudo yaourt -S vim-supertab
 
 ./setup_projects
+
+mkdir ~/.i3_logs

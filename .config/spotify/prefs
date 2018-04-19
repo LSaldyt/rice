@@ -1,7 +1,7 @@
 autologin.canonical_username="1262402960"
-autologin.blob="jYlgBEQxXD4WIcUXCVTjg5jIZhDeIcPRkLHjcRa/MbzwLKeTEBUd2JbSZGrha0oXbxd5mb5uvboT4/A/2tKGPrp8y97MS6at+cURGxPgxebXQZggq8IUctOBbKoEWoCEOtCbzQ+4eq2aKBlWghnWDmN2d0tutlLTZFQ121+jtE0="
+autologin.blob="jYlgBEQxXD4WIcUXCVTjg3+wG1pO9nnuIs2jVGz8HewFBTWMuSFGDFs2JfDbLjFoApA9L0gYxUQOw/MinASmOWBNgmuDldK7xeKzGcw2QRQ2UtosQ1r5kHRrzcg/qZrFXJ7utwuaLZ22W1M5OqpNAGlo3cO5zMXklPuTpQ75A9U="
 autologin.username="1262402960"
-autologin.saved_credentials="{\"1262402960\":[\"1262402960\",\"jYlgBEQxXD4WIcUXCVTjg5jIZhDeIcPRkLHjcRa/MbzwLKeTEBUd2JbSZGrha0oXbxd5mb5uvboT4/A/2tKGPrp8y97MS6at+cURGxPgxebXQZggq8IUctOBbKoEWoCEOtCbzQ+4eq2aKBlWghnWDmN2d0tutlLTZFQ121+jtE0=\"]}"
+autologin.saved_credentials="{\"1262402960\":[\"1262402960\",\"jYlgBEQxXD4WIcUXCVTjg3+wG1pO9nnuIs2jVGz8HewFBTWMuSFGDFs2JfDbLjFoApA9L0gYxUQOw/MinASmOWBNgmuDldK7xeKzGcw2QRQ2UtosQ1r5kHRrzcg/qZrFXJ7utwuaLZ22W1M5OqpNAGlo3cO5zMXklPuTpQ75A9U=\"]}"
 core.clock_delta=0
 storage.last-location="/home/flynn/.cache/spotify/Storage"
 app.window.position.height=2080

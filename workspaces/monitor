@@ -1,0 +1,17 @@
+#!/bin/bash
+
+source workspace_functions
+source ~/.bashrc
+
+horizontal
+open termite
+enter wicd-curses
+open termite 
+enter htop
+vertical
+open termite
+enter mx
+left
+vertical
+open termite
+enter pipes
