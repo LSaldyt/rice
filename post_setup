@@ -1,4 +1,0 @@
-#!/bin/bash
-
-get firefox
-get steam steam-native-runtime

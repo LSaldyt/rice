@@ -1,0 +1,11 @@
+#!/bin/bash
+
+pushd ~
+mkdir projects >& /dev/null
+cd projects
+mkdir meta >& /dev/null
+cd meta
+git clone https://github.com/LSaldyt/projector >& /dev/null
+cd projector
+./projector LSaldyt
+popd

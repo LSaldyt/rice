@@ -1,7 +1,0 @@
-#!/bin/bash
-
-sudo pacman -S jdk9-openjdk
-wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
-mkdir ~/bin
-mv lein ~/bin/
-chmod +x ~/bin/lein

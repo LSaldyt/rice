@@ -234,10 +234,6 @@ bindsym Ctrl+asciitilde exec termite
 # Everything
 
 
-#ctrl + Print
-    #screencast.sh
-
-
-#ctrl + shift + Print
-    #killall ffmpeg
-    #
+bindsym $win+plus exec amixer -q set Master 2dB+ unmute
+bindsym $win+minus exec amixer -q set Master 2dB- unmute
+bindsym $win+m exec amixer -q set Master toggle

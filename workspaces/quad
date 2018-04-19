@@ -1,0 +1,12 @@
+#!/bin/bash
+
+source workspace_functions
+
+horizontal
+open termite
+open termite 
+vertical
+open termite
+left
+vertical
+open termite

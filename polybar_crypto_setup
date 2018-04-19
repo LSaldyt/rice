@@ -1,3 +1,0 @@
-git clone https://github.com/willHol/polybar-crypto.git &&
-    cd polybar-crypto &&
-    cp ./{crypto-config,crypto.py} ~/.config/polybar
