@@ -237,3 +237,6 @@ bindsym Ctrl+asciitilde exec termite
 bindsym $win+plus exec amixer -q set Master 2dB+ unmute
 bindsym $win+minus exec amixer -q set Master 2dB- unmute
 bindsym $win+m exec amixer -q set Master toggle
+
+bindsym Ctrl+a exec bash ~/projects/meta/rice/workspaces/quad
+#bindsym $win+t exec bash ~/projects/meta/rice/workspaces/test

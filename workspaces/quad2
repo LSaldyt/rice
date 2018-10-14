@@ -1,0 +1,61 @@
+#!/bin/bash
+
+echo "HERE"
+i3-msg exec termite
+sleep 1
+i3-msg exec termite
+
+#i3-do () {
+#    i3-msg "$@"
+#    sleep .2
+#}
+#
+#vertical () { 
+#    i3-msg split v
+#}
+#
+#horizontal () { 
+#    i3-msg split h
+#}
+#
+#left () { 
+#    i3-msg focus left
+#}
+#
+#right () { 
+#    i3-msg focus right
+#}
+#
+#up () { 
+#    i3-msg focus up
+#}
+#
+#down () { 
+#    i3-msg focus down
+#}
+#
+#open () {
+#    i3-do exec $1
+#}
+#
+#typewrite () {
+#    ~/projects/meta/rice/typewrite $1
+#}
+#
+#press () {
+#    ~/projects/meta/rice/press $1
+#}
+#
+#enter () {
+#    typewrite $1
+#    press "enter"
+#}
+#
+#horizontal
+#open termite
+#open termite 
+#vertical
+#open termite
+#left
+#vertical
+#open termite
