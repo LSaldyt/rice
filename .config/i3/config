@@ -73,6 +73,16 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym Ctrl+$mod+1 workspace 11
+bindsym Ctrl+$mod+2 workspace 12
+bindsym Ctrl+$mod+3 workspace 13
+bindsym Ctrl+$mod+4 workspace 14
+bindsym Ctrl+$mod+5 workspace 15
+bindsym Ctrl+$mod+6 workspace 16
+bindsym Ctrl+$mod+7 workspace 17
+bindsym Ctrl+$mod+8 workspace 18
+bindsym Ctrl+$mod+9 workspace 19
+bindsym Ctrl+$mod+0 workspace 20
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -160,6 +170,7 @@ bindsym $mod+Shift+minus gaps outer all minus $resize_amount
 
 
 exec_always feh --bg-scale ~/pictures/wallpaper/current
+exec_always sudo rmmod pcspkr
 #bindsym $win+space exec res
 
 #bindsym $hype+a exec termite
@@ -201,10 +212,11 @@ bindsym $mod+f fullscreen toggle
 bindsym Ctrl+q kill
 # launch
 bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
+bindsym Super_L exec --no-startup-id i3-dmenu-desktop
 
 # Launch default applications extremely quickly
-bindsym Ctrl+s exec firefox   
-bindsym Ctrl+asciitilde exec st
+bindsym $mod+s exec firefox   
+bindsym Ctrl+asciitilde exec termite
 
 #bindsym Ctrl+j workspace 1
 #bindsym Ctrl+k workspace 2
@@ -237,5 +249,10 @@ bindsym $win+plus exec amixer -q set Master 2dB+ unmute
 bindsym $win+minus exec amixer -q set Master 2dB- unmute
 bindsym $win+m exec amixer -q set Master toggle
 
-bindsym Ctrl+a exec bash ~/projects/meta/rice/workspaces/quad
-#bindsym $win+t exec bash ~/projects/meta/rice/workspaces/test
+
+#bindsym Ctrl+a exec bash ~/projects/meta/rice/workspaces/quad
+#bindsym $win+w exec /home/flynn/projects/meta/rice/workspaces/monitor
+bindsym $win+w exec bash /home/flynn/projects/hacking/rice/workspaces/monitor
+#bindsym $win+t exec bash /home/flynn/projects/hacking/rice/workspaces/test
+bindsym $win+q exec bash /home/flynn/projects/hacking/rice/workspaces/quad2
+bindsym $win+t exec bash /home/flynn/projects/hacking/rice/workspaces/quad2
