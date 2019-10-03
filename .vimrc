@@ -396,19 +396,3 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
-
-call plug#begin('~/.vim/plugged')
-
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
-
-" Plug 'lervag/vimtex'
-" Plug 'kovisoft/paredit'
-Plug 'amdt/vim-niji', { 'for': 'clojure' }
-
-Plug 'ervandew/supertab'
-
-" ervandew/supertab
-
-
-call plug#end()

@@ -2,7 +2,6 @@
 #alias ls='ls -l --group-directories-first --color=auto --'
 alias ls='ls --group-directories-first --color=auto'
 alias upgrade="yaourt -Syau --noconfirm"
-alias qurry="cd projects/quantum/qurry"
 
 alias see='yaourt -s'
 alias get='sudo pacman -S'
@@ -141,8 +140,7 @@ alias tm='vim ~/.config/termite/config'
 alias open='xdg-open'
 alias lr='lein run'
 alias vrc='vim ~/.vimrc'
-alias trc='vim ~/.config/termite/config'
-alias pfind='pacman -Ss'
+#alias find='pacman -Ss'
 alias yfind='yaourt -Ss'
 alias open='xdg-open'
 
@@ -175,7 +173,4 @@ alias py2find='pip2 search'
 alias dc='sudo docker'
 
 alias untar='tar -xf'
-cs () {
-    cd "$1"
-    ls
-}
+alias brightness='xbacklight -set'
