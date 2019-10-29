@@ -10,5 +10,3 @@ cp .Xresources ~
 cp .bashrc ~
 cp .bash_profile ~
 cp .aliases ~
-mkdir ~/bin
-cp toggle-bar ~/bin

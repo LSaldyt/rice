@@ -1,7 +1,4 @@
-[[ $- != *i* ]] && return
-
-PS1='\h {\W}: '
-EDITOR=/usr/bin/vim
-
-RANGER_LOAD_DEFAULT_RC=FALSE
-source ~/.aliases
+export NUMCPUS=$( nproc )
+export NUMCPUSPLUSONE=$(( NUMCPUS + 1 ))
+export MAKEOPTS="-j${NUMCPUSPLUSONE} -l${NUMCPUS}"
+export EMERGE_DEFAULT_OPTS="--jobs=${NUMCPUSPLUSONE} --load-average=${NUMCPUS}"

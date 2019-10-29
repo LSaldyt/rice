@@ -204,7 +204,7 @@ bindsym Ctrl+e exec --no-startup-id i3-dmenu-desktop
 
 # Launch default applications extremely quickly
 bindsym Ctrl+s exec firefox   
-bindsym Ctrl+asciitilde exec st
+bindsym Ctrl+asciitilde exec termite
 
 #bindsym Ctrl+j workspace 1
 #bindsym Ctrl+k workspace 2
@@ -232,3 +232,11 @@ bindsym Ctrl+asciitilde exec st
 
 # SUPER unbound
 # Everything
+
+
+bindsym $win+plus exec amixer -q set Master 2dB+ unmute
+bindsym $win+minus exec amixer -q set Master 2dB- unmute
+bindsym $win+m exec amixer -q set Master toggle
+
+bindsym Ctrl+a exec bash ~/projects/meta/rice/workspaces/quad
+#bindsym $win+t exec bash ~/projects/meta/rice/workspaces/test
