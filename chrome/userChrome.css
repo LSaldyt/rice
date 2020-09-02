@@ -92,3 +92,43 @@ toolbar#nav-bar {
 toolbar{
     border: none !important;
 }
+
+/*
+ * Auto-hide the URL-bar. Show on hover or focus.
+ */
+
+#navigator-toolbox {
+  --trigger-area-height: 5px;
+}
+
+
+:root[chromehidden~="toolbar"] #navigator-toolbox {
+  --tabbar-height: 0px;
+
+}
+
+#nav-bar, #PersonalToolbar {
+	/* Otherwise spacers will not count as hover-able areas */
+    -moz-window-dragging: default;
+}
+
+:root:not([customizing]) #nav-bar
+{
+  overflow-y: hidden; !important;
+  max-height:0; !important;
+  min-height:0 !important;
+  opacity: 0;
+}
+
+:root:not([customizing]) :hover > #nav-bar,
+:root:not([customizing]) #nav-bar:focus-within {
+  max-height: 32px;
+  opacity: 1;
+}
+
+:root:not([customizing]) #navigator-toolbox {
+  max-height: 2px;
+  min-height: 0px;
+  margin-bottom: calc(-1 * var(--trigger-area-height));
+  transition: opacity 0.15s ease-in, max-height 0.15s linear;
+}
